@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "./Sidebar.module.scss";
 import config from "~/config";
 import Menu, { MenuItem } from "./Menu";
+import SuggestAccounts from "~/components/SuggestAccounts";
 import {
     HomeIcon,
     HomeActiveIcon,
@@ -34,6 +35,8 @@ function Sidebar() {
                     activeIcon={<LiveActiveIcon />}
                 ></MenuItem>
             </Menu>
+            <SuggestAccounts label={"Suggested Accounts"} />
+            <SuggestAccounts label={"Following Accounts"} />
         </aside>
     );
 }

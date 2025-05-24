@@ -241,7 +241,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx("user-avatar")}
-                                src="https://i.pinimg.com/736x/73/23/39/73233909562df67f0da23ff080e0db10.jpg "
+                                src="https://i.pinimg.com/736x/e4/87/b8/e487b829f18d56dd9bdd7b7acbfcbd4f.jpg"
                                 alt="Nguyen Van A"
                             />
                         ) : (
