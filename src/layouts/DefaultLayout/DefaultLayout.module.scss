@@ -12,5 +12,14 @@
     display: flex;
 }
 .content {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - var(--default-layout-header-height));
+    min-width: 420px;
+    flex-shrink: 1;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: stretch;
     flex: 1;
 }

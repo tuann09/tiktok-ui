@@ -1,5 +1,7 @@
+import ContentVideo from "~/layouts/components/ContentVideo";
+
 function Home() {
-    return <h2>Home page</h2>;
+    return <ContentVideo />;
 }
 
 export default Home;

@@ -10,6 +10,8 @@ import {
     LiveActiveIcon,
     UserFollowingIcon,
     LiveIcon,
+    DiscoverIcon,
+    DiscoverActiveIcon,
 } from "~/components/Icons";
 const cx = classNames.bind(styles);
 function Sidebar() {
@@ -17,26 +19,33 @@ function Sidebar() {
         <aside className={cx("wrapper")}>
             <Menu>
                 <MenuItem
-                    title="For You"
+                    title="Đề xuất"
                     to={config.routes.home}
                     icon={<HomeIcon />}
                     activeIcon={<HomeActiveIcon />}
                 ></MenuItem>
                 <MenuItem
-                    title="Following"
+                    title="Khám phá"
+                    to={config.routes.discover}
+                    icon={<DiscoverIcon />}
+                    activeIcon={<DiscoverActiveIcon />}
+                ></MenuItem>
+                <MenuItem
+                    title="Đã follow"
                     to={config.routes.following}
                     icon={<UserFollowingIcon />}
                     activeIcon={<UserFollowingActiveIcon />}
                 ></MenuItem>
+
                 <MenuItem
-                    title="Live"
+                    title="LIVE"
                     to={config.routes.live}
                     icon={<LiveIcon />}
                     activeIcon={<LiveActiveIcon />}
                 ></MenuItem>
             </Menu>
-            <SuggestAccounts label={"Suggested Accounts"} />
-            <SuggestAccounts label={"Following Accounts"} />
+
+            <SuggestAccounts label={"Các tài khoản Đã follow"} />
         </aside>
     );
 }
